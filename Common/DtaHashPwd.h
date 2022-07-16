@@ -42,6 +42,6 @@ void DtaHashPwd(vector<uint8_t> &hash, char * password, DtaDev * device);
  * @param hashsize size of hash to be returned
  */
 void DtaHashPassword(vector<uint8_t> &hash, char * password, vector<uint8_t> salt,
-        unsigned int iter = 75000, uint8_t hashsize = 32);
+        unsigned int iter = 500000, uint8_t hashsize = 32);
 /** Test the hshing function using publicly available test cased and report */
 int TestPBKDF2();
